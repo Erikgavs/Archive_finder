@@ -10,15 +10,16 @@ ________ 0    ||    |   |||      ______     |||||
 |        |    |    ||   |||      |_____     |    ||  
 
 [*] Tool designed by Erik
-[*] Tool designed for ethical pourposes and may not be used to do illegal things 
-[*] Enumerate the archives of a machine 
+[*] Tool designed for ethical pourposes
 """)
 
-# CONTENIDO DEL SCRIPT
+reset = "\033[0m"
+
+azul = "\033[34m"
 
 palabra = input("\nProporciona el nombre del archivo que estás buscando: ")
 
-ruta = input("\nQuieres buscar en una Ruta específica? (S/N): ")
+ruta = input(f"\nQuieres buscar en una Ruta específica? {azul}(S/N){reset}: ")
 
 if ruta.upper() == "S":
     ruta = input("[*] Específica la ruta: ")
@@ -33,7 +34,7 @@ encontrado = False
 for raiz, carpetas, archivos in os.walk(ruta):
     for archivo in archivos:
         if palabra in archivo:
-            print(f"[*] Archivo encontrado: {archivo}")
+            print(f"[*] Archivo encontrado: {azul}{archivo}{reset}")
             encontrado = True
 if not encontrado:
     print("[-] Archivo no encontrado")
