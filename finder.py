@@ -17,6 +17,8 @@ reset = "\033[0m"
 
 azul = "\033[34m"
 
+rojo = "\33[31m"
+
 palabra = input("\nProporciona el nombre del archivo que estás buscando: ")
 
 ruta = input(f"\nQuieres buscar en una Ruta específica? {azul}(S/N){reset}: ")
@@ -34,7 +36,7 @@ encontrado = False
 for raiz, carpetas, archivos in os.walk(ruta):
     for archivo in archivos:
         if palabra in archivo:
-            print(f"[*] Archivo encontrado: {azul}{archivo}{reset}")
+            print(f"[*] Archivo encontrado: {azul}{archivo}{reset} {rojo}{raiz}{reset}")
             encontrado = True
 if not encontrado:
     print("[-] Archivo no encontrado")
