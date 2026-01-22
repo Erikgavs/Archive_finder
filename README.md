@@ -1,49 +1,49 @@
 # 🔍 Archive Finder
 
-Herramienta de búsqueda de archivos diseñada para facilitar la enumeración en entornos de pentesting y CTF.
+File search tool designed to facilitate enumeration in pentesting and CTF environments.
 
-## 📋 Descripción
+## 📋 Description
 
-Archive Finder es un script en Python que permite buscar archivos por nombre en el sistema de manera rápida y visual. Diseñado específicamente para ayudar en la fase de enumeración durante auditorías de seguridad y desafíos CTF.
+Archive Finder is a Python script that allows you to search for files by name on the system quickly and visually. Specifically designed to assist in the enumeration phase during security audits and CTF challenges.
 
-## ✨ Características
+## ✨ Features
 
-- 🔎 Búsqueda por nombre de archivo (coincidencia parcial)
-- 🎯 Opción de buscar en todo el sistema o en una ruta específica
-- 🎨 Salida colorizada para mejor visualización
-- ⚡ Interfaz interactiva y fácil de usar
-- 🐧 Compatible con sistemas Linux
+- 🔎 Search by filename (partial match)
+- 🎯 Option to search the entire system or a specific path
+- 🎨 Colorized output for better visualization
+- ⚡ Interactive and easy-to-use interface
+- 🐧 Linux compatible
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
 - Python 3.x
-- Sistema operativo Linux
-- Permisos de lectura en los directorios a escanear (se recomienda ejecutar con sudo para acceso completo)
+- Linux operating system
+- Read permissions on directories to scan (recommended to run with sudo for full access)
 
-## 📥 Instalación
+## 📥 Installation
 
 ```bash
 git clone https://github.com/Erikgavs/Archive_finder.git
 cd Archive_finder
 ```
 
-## 🚀 Uso
+## 🚀 Usage
 
-### Ejecución básica
+### Basic execution
 
 ```bash
 python3 finder.py
 ```
 
-### Ejecución con privilegios elevados (recomendado)
+### Execution with elevated privileges (recommended)
 
 ```bash
 sudo python3 finder.py
 ```
 
-### Ejemplos de uso
+### Usage examples
 
-**1. Búsqueda en todo el sistema:**
+**1. System-wide search:**
 ```bash
 $ python3 finder.py
 
@@ -55,7 +55,7 @@ Quieres buscar en una Ruta específica? (S/N): N
 [*] Archivo encontrado: config.php /opt/app/includes
 ```
 
-**2. Búsqueda en ruta específica:**
+**2. Specific path search:**
 ```bash
 $ python3 finder.py
 
@@ -67,37 +67,37 @@ Quieres buscar en una Ruta específica? (S/N): S
 [*] Archivo encontrado: passwords.txt /home/user/Documents
 ```
 
-## ⚠️ Limitaciones Conocidas
+## ⚠️ Known Limitations
 
-- Los errores de permisos no se muestran en pantalla
-- No soporta búsquedas por expresiones regulares
-- No permite búsqueda por múltiples términos simultáneamente
-- No puede buscar por permisos, tamaño o fecha de modificación
-- La búsqueda distingue entre mayúsculas y minúsculas
+- Permission errors are not displayed on screen
+- Does not support regular expression searches
+- Does not allow searching for multiple terms simultaneously
+- Cannot search by permissions, size, or modification date
+- Search is case-sensitive
 
-## 🔒 Advertencia Legal
+## 🔒 Legal Warning
 
-Este script está diseñado **exclusivamente para uso ético** en:
-- Entornos controlados de laboratorio
-- Plataformas de práctica autorizadas (HackTheBox, TryHackMe, etc.)
-- Auditorías de seguridad con autorización explícita
-- Competiciones CTF
+This script is designed **exclusively for ethical use** in:
+- Controlled laboratory environments
+- Authorized practice platforms (HackTheBox, TryHackMe, etc.)
+- Security audits with explicit authorization
+- CTF competitions
 
-**NO** debe ser usado para:
-- Acceder a sistemas sin autorización
-- Causar daño o perjuicio a terceros
-- Actividades ilegales de cualquier tipo
+**DO NOT** use it for:
+- Accessing systems without authorization
+- Causing harm or damage to third parties
+- Illegal activities of any kind
 
-El uso indebido de esta herramienta es responsabilidad exclusiva del usuario.
+Misuse of this tool is the sole responsibility of the user.
 
-## 👤 Autor
+## 👤 Author
 
 **Erik**
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de código abierto y está disponible para uso educativo.
+This project is open source and available for educational use.
 
 ---
 
-*Herramienta creada con fines educativos y de seguridad ética.*
+*Tool created for educational and ethical security purposes.*
